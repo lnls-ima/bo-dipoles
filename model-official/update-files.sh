@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# For new models the variables below should be edited and this script should be run
+
 MODEL_VERSION=06
 FIELDMAP_FILE="2014-09-18_Dipolo_Booster_BD_Modelo_6_-80_35mm_-1000_1000mm.txt"
 FIELDMAP_ANALYSIS="model6-one-piece-extraction"
