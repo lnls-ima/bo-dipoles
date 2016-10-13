@@ -1,0 +1,1 @@
+../model-06/simulation-fieldmap/fieldmap-files/2014-09-18_Dipolo_Booster_BD_Modelo_6_-80_35mm_-1000_1000mm.txt
