@@ -1,5 +1,6 @@
-Model 06 - Booster dipoles
+Sirius Booster Dipoles
 
+- model version: 06
 - timestamp: 2014-09-18_12-05-03
 - analysed fieldmap: 2014-09-18_Dipolo_Booster_BD_Modelo_6_-80_35mm_-1000_1000mm.txt
 

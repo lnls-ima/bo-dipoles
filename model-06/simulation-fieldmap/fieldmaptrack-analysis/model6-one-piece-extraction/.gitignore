@@ -1,6 +1,4 @@
-*.pdf 
-*.pkl 
-*.out 
+*.pdf *.pkl *.out 
 
 *~
 
