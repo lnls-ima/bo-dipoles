@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
-MODEL_VERSION=03
-FIELDMAP_FILE="2011-05-2015 Quadrupolo_Anel_Q14_Modelo 3_-14_14mm_-500_500mm.txt"
-FIELDMAP_ANALYSIS="analysis1"
-
+MODEL_VERSION=06
+FIELDMAP_FILE="2014-09-18_Dipolo_Booster_BD_Modelo_6_-80_35mm_-1000_1000mm.txt"
+FIELDMAP_ANALYSIS="model6-one-piece-extraction"
 
 echo "setting official model to model-"${MODEL_VERSION}
 echo "fieldmap file: "${FIELDMAP_FILE}
