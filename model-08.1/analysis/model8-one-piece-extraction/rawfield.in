@@ -27,7 +27,7 @@
 
 # the full name of the file that contains the field map
 
-  fmap_filename            '../fieldmaps/BOMA-BD_12072016_vs1_FAC.TXT'
+  fmap_filename            '../../simulation/2016-07-12_BD_Model_8vs1_N=12_I=1050A_X=-80.0_35.0mm_Z=-1000_1000mm.TXT'
 
 
 # Runge-kutta algorithm used for the integration of the eqs. of motion needs to know
