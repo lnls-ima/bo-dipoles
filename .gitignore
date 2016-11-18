@@ -1,6 +1,7 @@
 *~
 *_solved.mn
 **/tests
+*_ignore.*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
