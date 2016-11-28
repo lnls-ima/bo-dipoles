@@ -11,8 +11,11 @@ readme_template = [
 '======================',
 '',
 'current official model version : MODEL_VERSION',
+'',
 'fieldmap analysis folder       : FIELDMAP_FOLDER',
+'',
 'fieldmap file                  : FIELDMAP_FILE',
+''
 '',
 '',
 'Observations',
