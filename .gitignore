@@ -3,7 +3,8 @@
 **/tests
 *_ignore.*
 
-model-previous/
+model-previous/*.gz
+model-previous/*.zip
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
