@@ -2,7 +2,6 @@
 *_solved.mn
 **/tests
 *_ignore.*
-model-previous/
 
 model-previous/*.gz
 model-previous/*.zip
