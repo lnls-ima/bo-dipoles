@@ -7,6 +7,8 @@ model-previous/
 model-previous/*.gz
 model-previous/*.zip
 
+*.pxp
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
