@@ -1,0 +1,13 @@
+--- fieldmap ---
+timestamp:                          2016-11-11_16-18-19
+filename:                           2016-11-11_BD_Model09_Sim_X=-80_35mm_Z=-1000_1000mm_I=981.778A.txt
+magnet_label:                       BD_Booster
+magnet_length:                      1206.0 mm
+main_coil_current:                  981.778 A
+magnetic_gap:                       28.0 mm
+ry_grid:                            1 point in [0.0,0.0] mm (step of 0.000000 mm)
+rx_grid:                            116 points in [-80.0,35.0] mm (step of 1.000000 mm)
+rz_grid:                            2001 points in [-1000.0,1000.0] mm (step of 1.000000 mm)
+by@(all)(axis):                     (min:-1.08815 max:-0.00008) (min:-1.04945 max:-0.00009) Tesla
+bx@(all)(axis):                     (min:-0.00000 max:+0.00000) (min:-0.00000 max:+0.00000) Tesla
+bz@(all)(axis):                     (min:-0.00000 max:+0.00000) (min:-0.00000 max:+0.00000) Tesla
