@@ -1,19 +1,19 @@
-fieldmap_name:	BD-038
-timestamp:	2017-04-03_16-19-08
-filename:	2017-04-03_BD-038_Model09_Hall_I=991.63A.dat
-nr_magnets:	1
+fieldmap_name:		BD-038
+timestamp:		2017-04-03_16-19-08
+filename:		2017-04-03_BD-038_Model09_Hall_I=991.63A.dat
+nr_magnets:		1
 
-magnet_name:	BD-038
-gap[mm]:	28
-control_gap:	--
+magnet_name:		BD-038
+gap[mm]:		28
+control_gap[mm]:	--
 magnet_length[mm]:	1206
 current_main[A]:	991.63
-NI_main[A.esp]:	11899.56
+NI_main[A.esp]:		11899.56
 center_pos_z[mm]:	0
 center_pos_x[mm]:	0
-rotation[deg]:	0
+rotation[deg]:		0
 
-X[mm]	Y[mm]	Z[mm]	Bx, By, Bz [T]
+X[mm]	Y[mm]	Z[mm]	Bx	By	Bz [T]
 ---------------------------------------------------------------------------------------------
 -50.000	0.000	-741.500	2.2229742469e-04	-4.2320078813e-03	-1.6081048165e-04
 -48.000	0.000	-741.500	2.1613283672e-04	-4.3185246773e-03	-1.5889073780e-04
