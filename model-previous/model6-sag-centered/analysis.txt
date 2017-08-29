@@ -1,0 +1,39 @@
+DIPOLE ANALYSIS
+===============
+label:                              b_model6
+--- fieldmap ---
+timestamp:                          2014-09-18_12-05-03
+filename:                           2014-09-18_Dipolo_Booster_BD_Modelo_6_-80_35mm_-1000_1000mm.txt
+magnet_label:                       BD_Booster
+magnet_length:                      1150.0 mm
+main_coil_current:                  977.45 A
+magnetic_gap:                       28.0 mm
+control_gap:                        None mm
+ry_grid:                            1 point in [0.0,0.0] mm (step of 0.000000 mm)
+rx_grid:                            116 points in [-80.0,35.0] mm (step of 1.000000 mm)
+rz_grid:                            2001 points in [-1000.0,1000.0] mm (step of 1.000000 mm)
+by@(all)(axis):                     (min:-1.08776 max:-0.00012) (min:-1.04881 max:-0.00013) Tesla
+bx@(all)(axis):                     (min:-0.00000 max:+0.00000) (min:-0.00000 max:+0.00000) Tesla
+bz@(all)(axis):                     (min:-0.00000 max:+0.00000) (min:-0.00000 max:+0.00000) Tesla
+--- trajectory (rz > 0) ---
+horizontal_deflection_angle:        -3.6032e+00 deg.
+vertical_deflection_angle:          +0.0000e+00 deg.
+trajectory_length:                  1001.1000000001591 mm
+trajectory_nrpts:                   10012
+trajectory_s_step:                  0.1 mm
+max_abs_bx@trajectory:              -0.000000 Tesla at (s,rx,ry,rz) = (548.3000000000561,-6.98859325903063,0.0,548.0048375441202) mm
+max_abs_by@trajectory:              -1.060624 Tesla at (s,rx,ry,rz) = (546.3000000000557,-6.87473751576329,0.0,546.0080809603706) mm
+max_abs_bz@trajectory:              +0.000000 Tesla at (s,rx,ry,rz) = (576.3000000000625,-8.626529790911755,0.0,575.9568789045273) mm
+sagitta:                            17.145416647632587 mm
+--- multipoles on reference trajectory (rz > 0) ---
+perpendicular_grid:                 31 points in [-6.000000,+6.000000] mm
+r0_for_relative_multipoles          17.5 mm
+<multipole_order n>                  MaxAbs_Nn     Integ_Nn    Nn/N0(@r0)    PolynomB   |  MaxAbs_Sn     Integ_Sn    Sn/S0(@r0)    PolynomA  
+<multipole_order n>                   [T/m^n]     [T.m/m^n]        []       [1/m^n+1]   |   [T/m^n]     [T.m/m^n]        []       [1/m^n+1]  
+n=00:                                1.061e+00    -6.293e-01  +1.0000e+00   +0.000e+00  |  6.127e-16    -4.950e-18   +7.866e-18   +8.588e-19 
+n=01:                                2.729e+00    +1.226e+00  -3.4090e-02   -2.127e-01  |  3.226e-13    -5.910e-16   +1.643e-17   +1.025e-16 
+n=02:                                2.755e+01    +1.290e+01  -6.2758e-03   -2.237e+00  |  4.494e-11    +1.088e-13   -5.293e-17   -1.887e-14 
+n=03:                                1.228e+03    +4.117e+00  -3.5061e-05   -7.143e-01  |  1.241e-08    +2.042e-11   -1.739e-16   -3.542e-12 
+n=04:                                9.035e-04    +4.230e-04  -6.3041e-11   -7.338e-05  |  1.474e-15    +3.568e-18   -5.317e-25   -6.189e-19 
+n=05:                                5.207e-02    +1.746e-04  -4.5527e-13   -3.028e-05  |  5.264e-13    +8.657e-16   -2.258e-24   -1.502e-16 
+n=06:                                2.877e-08    +1.347e-08  -6.1480e-19   -2.337e-09  |  4.694e-20    +1.136e-22   -5.185e-33   -1.971e-23 

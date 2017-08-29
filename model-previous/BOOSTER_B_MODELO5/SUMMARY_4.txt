@@ -1,0 +1,90 @@
+FIELDMAP ANALYSIS
+=================
+timestamp:                              13-Dec-2013 11:52:22
+magnet type:                            dipole
+nominal deflection angle:               7.2000000 deg.
+
+BEAM PARAMETERS
+
+energy:                                 2.2875 GeV
+relativistic factor:                    4476.5261
+magnetic Rigidity:                      7.6303 T.m
+current:                                1.5 mA
+
+FIELDMAP DATA
+
+--- fieldmap #01 ---
+filename:                               2013-12-12_Dipolo_Booster_BD_Modelo_5_-80_20mm_-1000_1000mm_4.txt
+physical length:                        1150 mm
+magnetic gap:                           28 mm
+horizontal grid (x):                    [-80,20] mm, 101 pts
+longitudinal grid (z):                  [-1000,1000] mm, 2001 pts
+vertical field By:                      [-0.8319,-0.0000] T
+horizontal field Bx:                    [-0.0000,+0.0000] T
+longitudinal field Bz:                  [-0.0000,+0.0000] T
+
+RUNGE-KUTTA TRAJECTORY (full model)
+
+deflection angle:                       7.2008813 deg. [+0.012 %]
+irradiated power:                       0.0074 kW
+initial [x,y,z,beta_x,beta_y,beta_z]:   [ +9.045  +0.000  +0.000  +0.000  +0.000  +1.000 ] (mm/n.u.)
+arclength  s interval:                  [+0.000, +1100.000] mm
+horizontal x interval:                  [-40.990, +9.045] mm
+longitudinal z interval:                [+0.000, +1098.627] mm
+max. abs. (Bx,By,Bz):                   [-0.0000,-0.8109,-0.0000] T
+multipole grid (x):                     [-6,6] mm, 31 pts
+r0 for tracy coeff:                     17.500 mm
+multipoles (polynomB):                  [order]   [maximum abs. value]  [integrated value]    [tracy3 coeffs]       
+                                        00        -8.10931E-01 T        -9.58966E-01 T.m      +1.00000E+00
+                                        01        +2.15390E+00 T/m      +1.88887E+00 T        -3.44696E-02
+                                        02        +2.30424E+01 T/m^2    +1.96499E+01 T/m      -6.27527E-03
+                                        03        +1.96743E+03 T/m^3    +9.55343E+00 T/m^2    -5.33913E-05
+                                        04        +4.19080E+05 T/m^4    +6.09573E+02 T/m^3    -5.96177E-05
+                                        05        -3.38121E+07 T/m^5    +3.00444E+04 T/m^4    -5.14222E-05
+                                        06        -7.23184E+09 T/m^6    +3.23396E+07 T/m^5    -9.68635E-04
+multipoles (polynomA):                  [order]   [maximum abs. value]  [integrated value]    [tracy3 coeffs]       
+                                        00        -9.54799E-16 T        +5.89780E-19 T.m      -6.15016E-19
+                                        01        -2.28642E-12 T/m      +4.83257E-15 T        -8.81886E-17
+                                        02        -9.95393E-10 T/m^2    -2.62652E-12 T/m      +8.38790E-16
+                                        03        +1.70856E-07 T/m^3    -7.93191E-10 T/m^2    +4.43291E-15
+                                        04        +7.36758E-05 T/m^4    +2.06853E-07 T/m^3    -2.02307E-14
+                                        05        -3.02964E-03 T/m^5    +1.75661E-05 T/m^4    -3.00651E-14
+                                        06        -1.32041E+00 T/m^6    -3.50070E-03 T/m^5    +1.04853E-13
+
+TRANSFER MATRIX: AT MODEL vs RUNGE-KUTTA-REF-TRAJ (half model)
+
+determinant (Runge-Kutta): +0.999996988115097
+element   [runge-kutta]         [at-model]            [error %]             
+M11       +1.096863             +1.096770             -0.008502             
+M12       +1.123573             +1.123909             +0.029959             
+M21       +0.118737             +0.118752             +0.012476             
+M22       +1.033317             +1.033459             +0.013742             
+T211      +1.350279             +1.350175             -0.007641             
+
+TRANSFER MAPS: AT MODEL vs RUNGE-KUTTA (half-model)
+
+horizontal grid (x):                    [-6,6] mm, 31 pts
+angular grid (px):                      [0,0] mm, 1 pts
+max. abs. delta x:                      1.67 um
+max. abs. delta px:                     0.02 urad
+max. abs. delta dl:                     0.25 mm
+fitted multipoles:                      [order]   [runge-kutta]         [at-model]            [error %]             
+                                        00        -7.67780E-06          -7.67780E-06          -0.000
+                                        01        +1.18753E-01 1/m      +1.18751E-01 1/m      -0.002
+                                        02        +1.35028E+00 1/m^2    +1.35018E+00 1/m^2    -0.008
+                                        03        +1.06079E+00 1/m^3    +1.10832E+00 1/m^3    +4.481
+                                        04        +2.63382E+02 1/m^4    +2.75426E+02 1/m^4    +4.573
+                                        05        +3.62593E+03 1/m^5    +3.86671E+03 1/m^5    +6.640
+                                        06        -1.59654E+06 1/m^6    -1.87821E+06 1/m^6    +17.642
+
+AT MODEL SEGMENTATION (half model)
+
+LENGTH[m] ANGLE[rad]        (n Bn)... 
+0.196     +2.0267035094E-02  0 +0.0000000000E+00    1 -2.2708127715E-01    2 -1.9908692999E+00    3 -7.4071086186E+00    4 +6.5096031244E+01    5 -1.3259811566E+04    6 -6.3774565984E+06   
+0.192     +2.0016421563E-02  0 +0.0000000000E+00    1 -2.1178207616E-01    2 -1.9277091303E+00    3 -2.5474136781E+00    4 -2.3826682164E+02    5 -8.1891324695E+03    6 -1.1034701885E+05   
+0.158     +1.6684098273E-02  0 +0.0000000000E+00    1 -1.8538618191E-01    2 -1.9190580185E+00    3 +7.9576026907E-01    4 +5.8342988989E+00    5 -5.5961673460E+02    6 -1.1136854662E+06   
+0.034     +3.4169931983E-03  0 +0.0000000000E+00    1 -2.0956438538E-01    2 -1.9664252350E+00    3 +4.6967098429E+00    4 -3.8236083824E+03    5 +7.1145007259E+04    6 +7.0634943881E+07   
+0.030     +1.3879449958E-03  0 +0.0000000000E+00    1 -9.7725759543E-02    2 -1.7382687930E+00    3 +2.1892491999E+01    4 +4.6392729466E+03    5 +2.7994434169E+03    6 -1.1013894131E+08   
+0.158     +1.0574187926E-03  0 +0.0000000000E+00    1 +4.6677664908E-03    2 -6.6249714548E-01    3 +2.3176816627E+00    4 -6.2597144961E+01    5 -1.2246192136E+03    6 +5.1423643457E+05   
+0.001     +1.9411559940E-06  0 +7.6777985063E-03    1 +2.6382697789E-02    2 -8.1651340166E+00    3 -1.3022000955E+02    4 -1.9384882728E+05    5 -1.7007318138E+06    6 +3.2000124518E+09   
+

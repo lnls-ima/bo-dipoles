@@ -1,0 +1,61 @@
+# original
+
+ Betatron tune H: 		19.19099 (115.25142 [kHz])
+                 V: 		7.32312 (194.98612 [kHz])
+   Momentum Compaction Factor: 	0.00070
+   Chromaticity H: 		+0.56846
+                V: 		-0.06871
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# modelo bastante segmentado 'modelo4_segmentado':
+
+   Betatron tune H: 		19.29195 (176.17621 [kHz])
+                 V: 		6.25176 (151.92524 [kHz])
+   Momentum Compaction Factor: 	0.00071
+   Chromaticity H: 		+0.05108
+                V: 		+6.07153
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# 3 segmentos 'modelo4_fewsegments':
+
+   Betatron tune H: 		19.28295 (170.74485 [kHz])
+                 V: 		6.19488 (117.60194 [kHz])
+   Momentum Compaction Factor: 	0.00072
+   Chromaticity H: 		+0.07260
+                V: 		+6.36269
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# 3 segmentos 'modelo4':
+
+ Betatron tune H: 		19.28133 (169.76505 [kHz])
+                 V: 		6.18686 (112.76153 [kHz])
+   Momentum Compaction Factor: 	0.00072
+   Chromaticity H: 		+0.07426
+                V: 		+6.44597
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# 4 segmentos 'modelo4_4segments': segmentacao interna
+                
+  Betatron tune H: 		19.28888 (174.32092 [kHz])
+                 V: 		6.22705 (137.01223 [kHz])
+   Momentum Compaction Factor: 	0.00072
+   Chromaticity H: 		+0.04996
+                V: 		+6.25434
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# 5 segmentos 'modelo4_5segments': mais segmentacao interna
+            
+ Betatron tune H: 		19.29102 (175.61326 [kHz])
+                 V: 		6.23518 (141.91642 [kHz])
+   Momentum Compaction Factor: 	0.00072
+   Chromaticity H: 		+0.04331
+                V: 		+6.20495
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# 5 segmentos 'modelo4_6segments': mais segmentacao interna
+            
+ Betatron tune H: 		19.29135 (175.81247 [kHz])
+                 V: 		6.24601 (148.45692 [kHz])
+   Momentum Compaction Factor: 	0.00071
+   Chromaticity H: 		+0.04131
+                V: 		+6.17206

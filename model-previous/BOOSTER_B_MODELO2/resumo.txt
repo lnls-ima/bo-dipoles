@@ -1,0 +1,104 @@
+A partir do dia 28/11/2013 a Priscila começou a fazer varios testes
+para tentar sumir com a estrutura sextupolar e quadrupolar existente
+na borda do dipolo. Esses testes foram baseados em dois modelos
+distintos de imãs, como especificado abaixo:
+
+    -modelo2: otimizado a partir do modelo1 para corrigir mudancas mecanicas
+      feitas no imã. Foi otimizado para que a trajetória começasse no centro
+      geométrico do magneto. Esse modelo de magneto possui um polo com chamfro 
+      transversal menor que o modelo3, explicado abaixo.
+
+    -modelo3: foi criado a partir da otimizacao 2D feita pelo Ricardo,
+      possui um chamfro transversal maior que o do modelo2.
+     
+    -modelo4: foi criado a partir de otimizacao 2D, mas com chamfro transversal
+      menor, parecido com o modelo2
+
+
+Os testes que ela enviou ate agora (05/12/2013) foram:
+
+    -Teste 1: modelo2, com bobina mais para cima (17mm);
+    -Teste 2: modelo2, com bobina mais para cima (17mm) + bobina colada no polo;
+    -Teste 3: modelo2, bobina mais para cima + bobina colada no polo + chamfro longitudinal;
+    -Teste 4: modelo3;
+    -Teste 5: modelo3, com endplate menor;
+    -Teste 6: modelo3, sem endplate;
+    -Teste 2_meia_corrente: o mesmo que Teste 2, mas com corrente na metade do valor;
+    -Teste 3_meia_corrente: o mesmo que Teste 2, mas com corrente na metade do valor;
+
+##################################################################
+
+A partir desses mapas de campo, fizemos varias comparacoes entre os modelos:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+1ra comparacao: 
+Queremos saber se o chamfro altera a saturacao do campo,
+mudando a proporcao das componentes quadrupolares e sextupolares.
+    
+Para fazer isso, comparamos os resultados de multipolos integrados 
+entre: Teste 2 e Teste 2_meia_corrente e Teste 3 e Teste 3_meia_corrente;
+    
+Cuidados tomados: verificamos que as trajetórias de referencia são as mesmas.
+
+Resultados:
+
+                        Ang. def     quad. int      sext. int     M21 (Runge)   Obs. add
+Teste 2                 7.0229759    +2.94590     +2.29159E+01    +0.143024   comport. qualit. dos 
+Teste 2_meia_corrente   7.0252370    +1.47348     +1.14570E+01    +0.143075   multip. são ident.
+
+Teste 3                 6.9418479    +2.87640     +2.24794E+01    +0.139507   comport. qualit. dos
+Teste 3_meia_corrente   6.9439919    +1.43869     +1.12389E+01    +0.139555   multip. são ident.
+
+Fazendo a razão entre as componentes, de campo, vemos que em ambos os casos, Teste 2 e Teste 3,
+os valores desviam da ordem de 1e-4 da reta, apresentando uma saturação desprezível.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+2da comparacao:
+Queremos ver o efeito do deslocamento da bobina mais para cima e do chamfro nos campos integrados
+de borda.
+
+Para isso, vamos comparar o modelo 2 com os Teste 1, Teste 2 e Teste 3
+
+Detalhe: Tive que iniciar a trajetória no centro geométrico do imã, pois o mapa do primeiro
+          modelo2 vai até 12mm na direção x-positivo.
+
+Resultados:
+
+            Ang. def     quad. int      sext. int     M21 (Runge) 
+modelo 2    
+Teste 1     7.1961802    +2.48306     +2.46382E+01    +0.118876   
+Teste 2     7.1598690    +2.52178     +2.37650E+01    +0.120907
+Teste 3     7.0753227    +2.45994     +2.34198E+01    +0.117814
+
+Além dos números acima, vamos ver os gráficos comparativos.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+3ra comparacao:
+Queremos ver o efeito do deslocamento da bobina mais para cima e do chamfro nos campos integrados
+de borda.
+
+Para isso, vamos comparar os Teste 1, Teste 2 e Teste 3
+
+Detalhe: Como esses mapas tem campo até 20mm na direção x-positivo, podemos 
+fazer as comparações com a trajetória centralizada.
+
+Ver gráficos;
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+4ta comparacao:
+Queremos ver o efeito da endplate nos campos integrados de borda.
+
+Para isso, vamos comparar os Teste 4, Teste 5 e Teste 6
+
+Ver gráficos;
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+5ta comparacao:
+Queremos comparar os diferentes modelos.
+
+
+Ver gráficos;
+
+
