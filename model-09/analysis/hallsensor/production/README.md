@@ -3,7 +3,7 @@ Booster Dipoles' Integrated Principal Multipoles
 
 As calculated in positive-half Runge-Kutta trajectory,
 defined by measured fieldmap with magnet excitated with current of 991.73A,
-corresponding to nominal paricle energy of 3 GeV.
+corresponding to nominal particle energy of 3 GeV.
 
 | DIPOLE     |   ANGLE[DEG]    | INT_DIPOLE[T.m]   | INT_QUADRUPOLE[T]  | INT_SEXTUPOLE[T/m] | INIT_RX@Z=0[mm] |
 | :----:     | :-------------: | :---------------: | :----------------: | :----------------: | :-------------: |
