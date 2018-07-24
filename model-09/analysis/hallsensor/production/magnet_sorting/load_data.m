@@ -12,6 +12,7 @@ end
 
 %%
 [segmodels_u, segmodels_s] = sort_by_angle(data);
+% [segmodels_u, segmodels_s] = sort_by_phase_advance(data);
 ring_u = insert_segmodels(ring0, segmodels_u, fam_data);
 ring_s = insert_segmodels(ring0, segmodels_s, fam_data);
 
@@ -29,7 +30,7 @@ twi_sc = calctwiss(ring_sc);
 
 
 %%
-close all;
+% close all;
 
 figure('Position', [100, 10, 1200, 2000]);
 ax = subplot(3, 1, 1);
