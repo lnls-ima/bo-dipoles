@@ -1,5 +1,5 @@
 function sorted_indcs = sort_by_phase_advance(data, param, indcs)
-    indcs = sort_simple(data, param, indcs)
+    indcs = sort_simple(data, param, indcs);
 
     off = 13;  % at each 13 dipoles, the phase advance is 10*pi and
                % at each 26 dipoles, the phase advance is 20*pi

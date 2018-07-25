@@ -86,5 +86,4 @@ end
 
 % builds entire magnet model, inserting additional markers
 % model_length = 2*sum(segmodel(:,2));
-model = [fliplr(b), b];
-model = buildlat(model);
+model = buildlat(b);

@@ -56,7 +56,7 @@ function twi = make_plots(indcs, ring, data)
     fi = fieldnames(indcs);
     mk = {'+', '*', '.'};
     for i=1:length(fi)
-        plot(ax, 100*data.exc_err(indcs.(fi{i})), mk{i}, 'MarkerSize', 16, ...
+        plot(ax, 100*data.angle(indcs.(fi{i})), mk{i}, 'MarkerSize', 16, ...
              'MarkerFaceColor','auto', 'DisplayName', fi{i});
     end
     legend(ax, 'Location', 'best');
