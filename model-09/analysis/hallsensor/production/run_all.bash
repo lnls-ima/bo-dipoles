@@ -1,57 +1,10 @@
 #!/usr/bin/env bash
 
-p=`pwd`
-a=004; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=005; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=006; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=007; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=008; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=009; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=010; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=011; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=012; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=013; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=014; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=015; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=016; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=017; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=018; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=019; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=020; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=021; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=022; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=023; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=024; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=025; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=026; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=027; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=028; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=029; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=030; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=031; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=032; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=033; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=034; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=035; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=036; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=037; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=038; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=039; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=040; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=041; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=042; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=043; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=044; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=045; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=046; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=047; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=048; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=049; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=050; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=051; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=052; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=053; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=054; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=055; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=056; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
-a=057; cd $p/bd-$a/M1/0991p63A/z-negative; fac-fma-analysis.py run
+for ima in $(ls | grep bd); do
+    for fol in positive negative; do
+        cd $ima/M1/0991p63A/z-$fol/ && \
+        echo running magnet $ima in the $fol direction && \
+        fac-fma-analysis.py run && \
+        cd ../../../../;
+    done
+done
