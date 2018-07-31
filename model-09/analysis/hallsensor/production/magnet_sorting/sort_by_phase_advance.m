@@ -15,3 +15,4 @@ function sorted_indcs = sort_by_phase_advance(data, param, indcs)
     indcs23 = indcs2(off+2:end);
 
     sorted_indcs = [indcs13; indcs21; indcs12; indcs22; indcs23; indcs11];
+end

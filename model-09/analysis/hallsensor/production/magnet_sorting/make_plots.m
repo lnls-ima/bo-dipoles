@@ -1,11 +1,12 @@
-function twi = make_plots(indcs, ring, data)
+function twi = make_plots(indcs, data)
+    rings = create_rings(indcs, data);
 
-    fs = fieldnames(ring);
+    fs = fieldnames(rings);
     for i=1:length(fs)
         m = fs{i};
-        twi.(m) = calctwiss(ring.(m));
+        twi.(m) = calctwiss(rings.(m));
     end
-
+    twi0 = twi.bare;
     %%
     % close all;
 
@@ -33,10 +34,10 @@ function twi = make_plots(indcs, ring, data)
 
         nux = tw.mux(end)/2/pi;
         nuy = tw.muy(end)/2/pi;
-        qd_idx = findcells(ring.(m), 'FamName', 'QD');
-        qf_idx = findcells(ring.(m), 'FamName', 'QF');
-        qd = getcellstruct(ring.(m), 'PolynomB', qd_idx(1), 1, 2);
-        qf = getcellstruct(ring.(m), 'PolynomB', qf_idx(1), 1, 2);
+        qd_idx = findcells(rings.(m), 'FamName', 'QD');
+        qf_idx = findcells(rings.(m), 'FamName', 'QF');
+        qd = getcellstruct(rings.(m), 'PolynomB', qd_idx(1), 1, 2);
+        qf = getcellstruct(rings.(m), 'PolynomB', qf_idx(1), 1, 2);
         fprintf(fmt, m, nux, nuy, tw.chromx, tw.chromy, qd, qf);
     end
 
@@ -54,9 +55,28 @@ function twi = make_plots(indcs, ring, data)
     xlabel(ax, 'position [m]', 'FontSize', 16);
     ylabel(ax, 'Exc. Error [%]', 'FontSize', 16);
     fi = fieldnames(indcs);
-    mk = {'+', '*', '.'};
+    mk = '+o*xvd^s><';
     for i=1:length(fi)
-        plot(ax, 100*data.angle(indcs.(fi{i})), mk{i}, 'MarkerSize', 16, ...
-             'MarkerFaceColor','auto', 'DisplayName', fi{i});
+        plot(ax, 100*data.exc_err(indcs.(fi{i})), mk(mod(i,length(mk))+1), ...
+             'MarkerSize', 16, 'MarkerFaceColor','auto', 'DisplayName', fi{i});
     end
     legend(ax, 'Location', 'best');
+end
+
+function res = calc_residue(tw, twi0, indcs, idcs_ref)
+
+    bbx = (tw.betax-twi0.betax)./twi0.betax;
+    rmsx = sqrt(trapz(twi0.pos, bbx.*bbx)/twi0.pos(end));
+    bby = (tw.betay-twi0.betay)./twi0.betay;
+    rmsy = sqrt(trapz(twi0.pos, bby.*bby)/twi0.pos(end));
+    res(1) = (rmsx + rmsy) * 100;
+
+    % measure how many changes they will have to make;
+    res(2) = sum(indcs ~= idcs_ref);
+    % measure how long they will have to walk to change magnets;
+    [~, ia, ib] = intersect(idcs_ref, indcs);
+    vec = abs(ia-ib);
+    in = vec>25;
+    vec(in) = 50 - vec(in);
+    res(3) = sum(vec);
+end

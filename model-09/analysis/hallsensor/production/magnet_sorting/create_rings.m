@@ -17,6 +17,6 @@ function ring = create_rings(indcs, data)
     for i=1:length(fs)
         m = fs{i};
         ring.(m) = insert_segmodels(ring.bare, data, fam_data, indcs.(m));
-        [ring.(m), ~] = cod_sg(orbit, ring.(m));
-        [ring.(m), ~] = lnls_correct_tunes(ring.(m), [nux0, nuy0], {'QF', 'QD'}, 'svd', 'add');
+%         [ring.(m), ~] = cod_sg(orbit, ring.(m));
+%         [ring.(m), ~] = lnls_correct_tunes(ring.(m), [nux0, nuy0], {'QF', 'QD'}, 'svd', 'add');
     end
