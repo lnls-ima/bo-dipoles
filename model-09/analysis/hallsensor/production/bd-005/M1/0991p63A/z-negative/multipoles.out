@@ -1,17 +1,17 @@
 --- multipoles on reference trajectory (rz > 0) ---
-effective_length:                   607.9381977109688 mm
+effective_length:                   607.9232033875822 mm
 perpendicular_grid:                 65 points in [-12.000000,+12.000000] mm
-max_fitting_error_normal            2.755/10262.494 G/G
-max_fitting_error_skew              86.974/86.974 G/G
+max_fitting_error_normal            2.740/10264.292 G/G
+max_fitting_error_skew              86.976/86.976 G/G
 r0_for_relative_multipoles          17.5 mm
 main_monomial                       n = 0, skew:False
                                        Nn(s=0)      Integ_Nn     Nn/N0(@r0)   |    Sn(s=0)      Integ_Sn     Sn/S0(@r0)  
 <multipole_order n>                    [T/m^n]      [T.m/m^n]        []       |    [T/m^n]      [T.m/m^n]        []      
-n=00:                                1.0334e+00    -6.2825e-01   +1.0000e+00  |      ---           ---           ---     
-n=01:                                2.2724e+00    +1.2104e+00   -3.3716e-02  |      ---           ---           ---     
-n=02:                                2.5232e+01    +1.2846e+01   -6.2620e-03  |      ---           ---           ---     
-n=03:                                5.1707e+02    +2.5895e+01   -2.2090e-04  |      ---           ---           ---     
-n=04:                                9.4564e+04    +2.5292e+03   -3.7757e-04  |      ---           ---           ---     
-n=05:                                3.1277e+06    -2.2762e+03   +5.9467e-06  |      ---           ---           ---     
-n=06:                                4.5075e+08    +1.0483e+07   -4.7928e-04  |      ---           ---           ---     
+n=00:                                1.0336e+00    -6.2833e-01   +1.0000e+00  |      ---           ---           ---     
+n=01:                                2.2689e+00    +1.2085e+00   -3.3658e-02  |      ---           ---           ---     
+n=02:                                2.4798e+01    +1.2841e+01   -6.2586e-03  |      ---           ---           ---     
+n=03:                                5.3623e+02    +2.4307e+01   -2.0732e-04  |      ---           ---           ---     
+n=04:                                8.5539e+04    +2.5211e+03   -3.7631e-04  |      ---           ---           ---     
+n=05:                                3.2618e+06    -8.8785e+02   +2.3192e-06  |      ---           ---           ---     
+n=06:                                4.0492e+08    +1.0538e+07   -4.8172e-04  |      ---           ---           ---     
 data points do not contain z=0 !
