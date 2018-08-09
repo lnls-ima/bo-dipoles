@@ -14,9 +14,6 @@ function data = load_data()
         filename = fullfile('../', name, 'M1', '0991p63A','z-negative', 'model.out');
         datan.segmodels{ii} = import_model(filename);
     end
-%     datan = datap;
-    
-    
     data.names = datap.names;
     data.angle = -datap.angle - datan.angle;
     data.exc_err = data.angle / mean(data.angle) - 1;
@@ -30,12 +27,62 @@ function data = load_data()
     end
 
     % Remove bad dipoles
-    data.unsorted = (1:length(data.angle))';
-    [~, dummy] = sort(data.angle);
-    idx_rm = 9;  % Remove dipole with small integrated sextupole
-    idx_rm = [idx_rm; dummy(1); dummy(end-1:end)];
-    [~, ai, ~] = intersect(data.unsorted, idx_rm);
-    data.unsorted(ai) = [];
+    indcs = (1:length(data.exc_err))';
+    % Remove bd-006 for being the reference dipole
+    idx_rm = 3;
+    % Remove bd-012 due to small integrate sextupole strength
+    idx_rm (end+1) = 9;
+    % Remove dipoles with large excitation errors
+    idx_rm = [idx_rm(:); 12; 53];  %bd-015, bd-056
+    [~, ai, ~] = intersect(indcs, idx_rm);
+    indcs(ai) = [];
+    data.unsorted = zeros(size(indcs));
+    fprintf('Discarding ');
+    for i=ai
+        fprintf('%s ', data.names{i});
+    end
+    fprintf('\n\n');
+    
+    %% Define types of section to impose constraints
+    tp.secs = [ ...
+        1;  3;  5;  9; ...
+        11; 13; 15; 19; ...
+        21; 23; 25; 29; ...
+        31; 33; 35; 39; ...
+        41; 43; 45]; % sec 49 must have the dipole bd-011
+    tp.dips = { ...
+%         'bd-056'; ...
+        'bd-014'; ...
+        'bd-035'; ...
+%         'bd-015'; ...
+        'bd-026'; ...
+        'bd-040'; ...
+        'bd-046'; ...
+        'bd-021'; ...
+        'bd-044'};
+    [~, ~, tp.dip_indcs] = intersect(tp.dips, data.names, 'stable');
+    data.sec_types.tp1 = tp;
+
+    tp.secs = 49; % sec 49 must have the dipole bd-011
+    tp.dips = {'bd-011'};
+    [~, ~, tp.dip_indcs] = intersect(tp.dips, data.names, 'stable');
+    data.sec_types.tp1p1 = tp;
+    
+    tp.secs = [2; 12; 22; 32; 42];
+    tp.dips = {'bd-057'};
+    [~, ~, tp.dip_indcs] = intersect(tp.dips, data.names, 'stable');
+    data.sec_types.tp4 = tp;
+   
+    
+    %% Create unsorted order satisfying constraints
+    fs = fieldnames(data.sec_types);
+    for i=1:length(fs)
+        tp = data.sec_types.(fs{i});
+        data.unsorted(tp.secs(1:length(tp.dip_indcs))) = tp.dip_indcs;
+    end
+    
+    I = data.unsorted>0;
+    data.unsorted(~I) = setdiff(indcs, data.unsorted(I));
 end
 
 

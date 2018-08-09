@@ -13,7 +13,9 @@ function indcs = main()
     end
 
     %% Do Simulated annealing around the sorted solution.
-%     indcs.anneal = sort_simulated_annealing(data, indcs.angle);
+%     opt = specifics.get_params();
+%     indcs.anneal = multiobjective.simulated_annealing_run(opt);
 
-    %% make plots
-    make_plots(indcs, data);
+    %% Do multi-objective optimization;
+%     multiobjective.run(opt);
+end
