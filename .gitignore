@@ -1,8 +1,6 @@
 # Measurements tests
-model-09/measurement/magnetic/hallprobe/excitation_curve/bd-006/cycling/
-model-09/measurement/magnetic/hallprobe/excitation_curve/bd-006/low_current/
-model-09/measurement/magnetic/hallprobe/excitation_curve/bd-006/opening/
-model-09/measurement/magnetic/hallprobe/excitation_curve/bd-006/repositioning/
+model-09/measurement/magnetic/hallprobe/excitation_curve/bd-006/tests/
+model-09/measurement/magnetic/hallprobe/excitation_curve/Linearidade_Dipolos_Booster.xlsx
 
 # --------------- Default lnls-ima ---------------
 *~
