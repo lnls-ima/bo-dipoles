@@ -1,17 +1,17 @@
-function data = load_data()
-    datap = import_readme(fullfile('../', 'README-0991p63A-Zpositive.md'));
+function data = load_data(dataset)
+    datap = import_readme(fullfile('../', dataset, 'README-0991p63A-Zpositive.md'));
     datap.segmodels = cell(size(datap.names));
     for ii=1:length(datap.names)
         name = datap.names{ii};
-        filename = fullfile('../', name, 'M1', '0991p63A','z-positive', 'model.out');
+        filename = fullfile('../', dataset, name, 'M1', '0991p63A','z-positive', 'model.out');
         datap.segmodels{ii} = import_model(filename);
     end
 
-    datan = import_readme(fullfile('../', 'README-0991p63A-Znegative.md'));
+    datan = import_readme(fullfile('../', dataset, 'README-0991p63A-Znegative.md'));
     datan.segmodels = cell(size(datan.names));
     for ii=1:length(datan.names)
         name = datan.names{ii};
-        filename = fullfile('../', name, 'M1', '0991p63A','z-negative', 'model.out');
+        filename = fullfile('../', dataset, name, 'M1', '0991p63A','z-negative', 'model.out');
         datan.segmodels{ii} = import_model(filename);
     end
     data.names = datap.names;
