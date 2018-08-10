@@ -1,0 +1,15 @@
+--- fieldmap ---
+timestamp:                          2018-07-30_22-14-00
+filename:                           2018-07-30_BD-049_Model09_Hall_I=330.54A.dat
+magnet_label:                       BD-049
+magnet_length:                      1206.0 mm
+main_coil_current:                  330.54 A
+main_coil_NI:                       3966.48 A
+magnetic_gap:                       28.0 mm
+control_gap:                        None mm
+ry_grid:                            1 point in [0.0,0.0] mm (step of 0.000000 mm)
+rx_grid:                            51 points in [-50.0,50.0] mm (step of 2.000000 mm)
+rz_grid:                            961 points in [-960.0,960.0] mm (step of 2.000000 mm)
+by@(all)(axis):                     (min:-0.36107 max:+0.00025) (min:-0.34831 max:+0.00025) Tesla
+bx@(all)(axis):                     (min:-0.00003 max:+0.02005) (min:-0.00002 max:+0.01886) Tesla
+bz@(all)(axis):                     (min:-0.00638 max:+0.00028) (min:-0.00399 max:+0.00025) Tesla
