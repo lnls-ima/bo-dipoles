@@ -1,6 +1,5 @@
-function compare_results(indcs)
-    params = specifics.get_params();
-    params = params.objective_data;
+function compare_results(indcs, opt)
+    params = opt.objective_data;
     
     fs = fieldnames(indcs);
     

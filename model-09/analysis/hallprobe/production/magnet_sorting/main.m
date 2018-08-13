@@ -1,7 +1,6 @@
 function indcs = main()
     % sirius('BO.V04.01');
-    dataset = 'x0-9p1013mm';
-    data = load_data(dataset);
+    data = load_data();
 
     %%
     indcs.unsorted = data.unsorted;
