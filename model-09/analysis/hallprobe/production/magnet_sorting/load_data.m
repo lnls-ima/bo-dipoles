@@ -1,4 +1,8 @@
 function data = load_data(dataset)
+    if ~exist('dataset', 'var')
+        dataset = 'x0-9p1013mm';
+    end
+
     datap = import_readme(fullfile('../', dataset, 'README-0991p63A-Zpositive.md'));
     datap.segmodels = cell(size(datap.names));
     for ii=1:length(datap.names)

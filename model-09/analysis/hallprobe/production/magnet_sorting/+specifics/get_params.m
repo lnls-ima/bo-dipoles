@@ -2,13 +2,15 @@ function opt = get_params()
     ring0 = sirius_bo_lattice();
 
     %% take into account new optics to compensate systematic quadrupole strength error of the dipoles:
-    qfi = findcells(ring0, 'FamName', 'QF');
-    ring0 = setcellstruct(ring0, 'PolynomB', qfi, 1.595, 1, 2);
+%     qfi = findcells(ring0, 'FamName', 'QF');
+%     ring0 = setcellstruct(ring0, 'PolynomB', qfi, 1.595, 1, 2);
 
     params.ring0 = ring0;
     params.twi0 = calctwiss(params.ring0);
     params.nus = [params.twi0.mux(end)/2/pi, params.twi0.muy(end)/2/pi];
     params.data = load_data();
+    rndnr = lnls_generate_random_numbers(0.07/100/2, 50*10, 'normal', 2);
+    params.errors = reshape(rndnr,50,[]);
 
     params.fam_data = sirius_bo_family_data(params.ring0);
     params.orbit.bpm_idx = params.fam_data.BPM.ATIndex(:);
@@ -27,9 +29,9 @@ function opt = get_params()
     opt.Ncut = 2;
     opt.NG = 1000;
     opt.Nobj = 2;
-    opt.config0 = [];
-    opt.folder = 'Const-run01';
-    opt.continue = true;
+    opt.config0 = params.data.unsorted;
+    opt.folder = 'NoConst-run01';
+    opt.continue = false;
     opt.arbitrary_initial = false;
     opt.print_info = @specifics.print_info;
     opt.simulanneal_Niter = 1000;
