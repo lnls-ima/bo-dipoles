@@ -1,0 +1,15 @@
+--- fieldmap ---
+timestamp:                          2018-07-28_17-04-00
+filename:                           2018-07-28_BD-042_Model09_Hall_I=40.309A.dat
+magnet_label:                       BD-042
+magnet_length:                      1206.0 mm
+main_coil_current:                  40.309 A
+main_coil_NI:                       483.708 A
+magnetic_gap:                       28.0 mm
+control_gap:                        None mm
+ry_grid:                            1 point in [0.0,0.0] mm (step of 0.000000 mm)
+rx_grid:                            51 points in [-50.0,50.0] mm (step of 2.000000 mm)
+rz_grid:                            961 points in [-960.0,960.0] mm (step of 2.000000 mm)
+by@(all)(axis):                     (min:-0.04348 max:+0.00030) (min:-0.04193 max:+0.00030) Tesla
+bx@(all)(axis):                     (min:+0.00006 max:+0.00251) (min:+0.00006 max:+0.00236) Tesla
+bz@(all)(axis):                     (min:-0.00056 max:+0.00022) (min:-0.00031 max:+0.00020) Tesla
