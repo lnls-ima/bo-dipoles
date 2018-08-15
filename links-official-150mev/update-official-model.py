@@ -97,7 +97,7 @@ def write_readme(r):
 
 def copy_files(r):
     os.system('cp -raf ../' + r['magnet_model_version'] + '/documentation ./')
-    os.system('cp -raf ../' + r['magnet_model_version'] + '/simulation/magentic/' + r['fieldmap_filename'] + ' ./fieldmap-file.txt')
+    os.system('cp -raf ../' + r['magnet_model_version'] + '/simulation/magnetic/' + r['fieldmap_filename'] + ' ./fieldmap-file.txt')
     os.system('cp -raf ../' + r['magnet_model_version'] + '/analysis/fieldmap/' + r['fmap_analysis_folder'] + '/analysis.txt ./')
     os.system('cp -raf ../' + r['magnet_model_version'] + '/analysis/fieldmap/' + r['fmap_analysis_folder'] + '/analysis.pdf ./')
     os.system('cp -raf ../' + r['magnet_model_version'] + '/analysis/fieldmap/' + r['fmap_analysis_folder'] + '/field_on_trajectory.txt ./')
