@@ -1,0 +1,17 @@
+--- multipoles on reference trajectory (rz > 0) ---
+effective_length:                   609.1138376127614 mm
+perpendicular_grid:                 65 points in [-12.000000,+12.000000] mm
+max_fitting_error_normal            3.086/10642.475 G/G
+max_fitting_error_skew              118.501/118.501 G/G
+r0_for_relative_multipoles          17.5 mm
+main_monomial                       n = 0, skew:False
+                                       Nn(s=0)      Integ_Nn     Nn/N0(@r0)   |    Sn(s=0)      Integ_Sn     Sn/S0(@r0)  
+<multipole_order n>                    [T/m^n]      [T.m/m^n]        []       |    [T/m^n]      [T.m/m^n]        []      
+n=00:                                1.0330e+00    -6.2921e-01   +1.0000e+00  |      ---           ---           ---     
+n=01:                                2.3421e+00    +1.2107e+00   -3.3672e-02  |      ---           ---           ---     
+n=02:                                2.7318e+01    +1.3775e+01   -6.7048e-03  |      ---           ---           ---     
+n=03:                                9.7863e+02    -5.1880e+01   +4.4190e-04  |      ---           ---           ---     
+n=04:                                1.4081e+05    -2.8086e+03   +4.1864e-04  |      ---           ---           ---     
+n=05:                                3.9014e+06    +2.2571e+05   -5.8878e-04  |      ---           ---           ---     
+n=06:                                7.4050e+08    +2.0576e+07   -9.3928e-04  |      ---           ---           ---     
+data points do not contain z=0 !

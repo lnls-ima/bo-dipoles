@@ -66,8 +66,8 @@ class FMapAnalysis:
                 self.results_angle = float(line.split()[1])
             elif 'rx position of reference' in line:
                 self.results_rx_ref = float(line.split()[5])
-            # elif 'initial rx position' in line:
-            #     self.results_rx_init = float(line.split()[5])
+            elif 'initial rx position' in line:
+                self.results_rx_init = float(line.split()[5])
 
     def files_read_results_multipoles(self):
         """."""
@@ -126,6 +126,41 @@ class FMapAnalysis:
         self.cmd_trajectory()
         self.files_read_results_rawfield()
         self.files_read_results_trajectory()
+
+    def analysis_multipoles(self):
+        """."""
+        self.cmd_clean()
+        self.files_create()
+        self.cmd_rawfield()
+        self.cmd_trajectory()
+        self.cmd_multipoles()
+        self.files_read_results_rawfield()
+        self.files_read_results_trajectory()
+        self.files_read_results_multipoles()
+
+    def analysis_model(self):
+        """."""
+        self.cmd_clean()
+        self.files_create()
+        self.cmd_rawfield()
+        self.cmd_trajectory()
+        self.cmd_multipoles()
+        self.cmd_model()
+        self.files_read_results_rawfield()
+        self.files_read_results_trajectory()
+        self.files_read_results_multipoles()
+
+    def analysis_concatenate_output_files(self):
+        """."""
+        path = self.path_analysis
+        cmd = 'cd ' + path + '; cat rawfield.out >> analysis.txt'
+        _os.system(cmd)
+        cmd = 'cd ' + path + '; cat trajectory.out >> analysis.txt'
+        _os.system(cmd)
+        cmd = 'cd ' + path + '; cat multipoles.out >> analysis.txt'
+        _os.system(cmd)
+        cmd = 'cd ' + path + '; cat model.out >> analysis.txt'
+        _os.system(cmd)
 
     # --- auxilliary method ---
 
