@@ -30,7 +30,7 @@
   fmap_filename            '../../../simulation/magnetic/2016-12-05_BD_Model09_Sim_X=-80_35mm_Z=-1000_1000mm_I=48.92A.txt'
 
 # Runge-kutta algorithm used for the integration of the eqs. of motion needs to know
-# what to do when trajectory reachs the fieldmap bounds. It will either extrapolate the field
+# what to do when trajectory reaches the fieldmap bounds. It will either extrapolate the field
 # along the longitudinal (z) direction or consider it to have vanished. This is controlled with
 # the parameter below. Bear in mind that the calculation of extrapolation coefficients is very
 # time-comsuming currently. As for the transverse directions (x and y), the RK algorithm will
