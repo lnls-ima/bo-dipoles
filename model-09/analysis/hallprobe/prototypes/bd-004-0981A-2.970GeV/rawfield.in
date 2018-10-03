@@ -27,7 +27,7 @@
 
 # the full name of the file that contains the field map
 
-  fmap_filename            '../../../measurement/magnetic/hallprobe/bd-004/2016-12-06_BD-004_Model09_Hall_I=981.77A.dat'
+  fmap_filename            '../../../../measurement/magnetic/hallprobe/prototypes/bd-004/2016-12-06_BD-004_Model09_Hall_I=981.77A.dat'
 
 
 # Runge-kutta algorithm used for the integration of the eqs. of motion needs to know
