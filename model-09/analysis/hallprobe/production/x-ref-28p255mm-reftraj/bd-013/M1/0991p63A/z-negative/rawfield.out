@@ -1,0 +1,16 @@
+data set does not contain z=0 !
+--- fieldmap ---
+timestamp:                          2017-03-09_18-53-45
+filename:                           2017-03-09_BD-013_Model09_Hall_I=991.63A.dat
+magnet_label:                       BD-013
+magnet_length:                      1206.0 mm
+main_coil_current:                  991.63 A
+main_coil_NI:                       11899.56 A
+magnetic_gap:                       28.0 mm
+control_gap:                        None mm
+ry_grid:                            1 point in [0.0,0.0] mm (step of 0.000000 mm)
+rx_grid:                            51 points in [-50.0,50.0] mm (step of 2.000000 mm)
+rz_grid:                            765 points in [-741.5,786.5] mm (step of 2.000000 mm)
+by@(all)(axis):                     (min:-1.08941 max:-0.00109) (min:-1.05200 max:-0.00141) Tesla
+bx@(all)(axis):                     (min:-0.00110 max:+0.01311) (min:-0.00061 max:+0.01183) Tesla
+bz@(all)(axis):                     (min:-0.06118 max:+0.00066) (min:-0.06001 max:+0.00055) Tesla
