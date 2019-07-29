@@ -1,0 +1,14 @@
+--- fieldmap ---
+timestamp:                          2018-09-24_09-49-41
+filename:                           2018-09-24_BD-006_Hall_X=-50_50mm_Z=-960_960mm_Imc=40.31A_ID=61.dat
+magnet_label:                       BD-006
+magnet_length:                      1206.0 mm
+main_coil_current:                  40.31 A
+magnetic_gap:                       28.0 mm
+control_gap:                        None mm
+ry_grid:                            1 point in [0.0,0.0] mm (step of 0.000000 mm)
+rx_grid:                            51 points in [-50.0,50.0] mm (step of 2.000000 mm)
+rz_grid:                            961 points in [-960.0,960.0] mm (step of 2.000000 mm)
+by@(all)(axis):                     (min:-0.04338 max:+0.00031) (min:-0.04184 max:+0.00031) Tesla
+bx@(all)(axis):                     (min:+0.00017 max:+0.00311) (min:+0.00018 max:+0.00284) Tesla
+bz@(all)(axis):                     (min:-0.00016 max:+0.00148) (min:-0.00009 max:+0.00018) Tesla
